@@ -1,28 +1,47 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
+import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { View, Image, Text, Button } from "@tarojs/components";
 import { add, minus, asyncAdd } from '../../actions/counter'
 
-import './index.less'
+import './index.scss'
+const tabList= [{
+  title: '关注',
+  val: 0
+}, {
+  title: '推荐',
+  val: 1
+}, {
+  title: '热榜',
+  val: 2
+}]
 
+function mapStateToProps(state) {
+  return {
+  };
+}
+function mapDispatchToProps(dispatch) {
+  return {
+  };
+}
+@connect(mapStateToProps, mapDispatchToProps)
 
-@connect(({ counter }) => ({
-  counter
-}), (dispatch) => ({
-  add () {
-    dispatch(add())
-  },
-  dec () {
-    dispatch(minus())
-  },
-  asyncAdd () {
-    dispatch(asyncAdd())
-  }
-}))
 class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentListIdx: 1,
+    };
+  }
   componentWillReceiveProps (nextProps) {
     console.log(this.props, nextProps)
+  }
+
+  changeIdx(n) {
+    if (n == this.state.currentListIdx) {
+      return false
+    }
   }
 
   componentWillUnmount () { }
@@ -32,13 +51,17 @@ class Index extends Component {
   componentDidHide () { }
 
   render () {
+    const { currentListIdx } = this.state
     return (
       <View className='index'>
-        <Button className='add_btn' onClick={this.props.add}>+</Button>
-        <Button className='dec_btn' onClick={this.props.dec}>-</Button>
-        <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
-        <View><Text>{this.props.counter.num}</Text></View>
-        <View><Text>Hello, World</Text></View>
+        <View className='tab fl-row-center'>
+          {tabList.map((item, idx) =>
+            (
+              <View key={idx} className={`tab-item ${currentListIdx == idx ? 'active' : ''}`} onClick={this.changeIdx.bind(this, idx)}>{item.title}</View>)
+          )
+          }
+          <View className='tab-item' onClick={this.linkToTime}>倒计时</View>
+        </View>
       </View>
     )
   }

@@ -1,0 +1,39 @@
+page{
+    background: #f7f8f9;
+}
+.index {
+    background: #f7f8f9;
+}
+.tab {
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    left: 0;
+    z-index: 9;
+    border-bottom: 1px solid #f1f3f8;
+    .tab-item {
+      width: 25%;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #a7adb6;
+      font-size: 16px;
+      &.active {
+        color: #0000af;
+        font-size: 20px;
+        position: relative;
+        font-weight: bold;
+        &::after {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: #0000af;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }

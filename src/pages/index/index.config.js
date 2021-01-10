@@ -1,3 +1,5 @@
 export default {
-  navigationBarTitleText: '首页'
+  navigationBarTitleText: "如何获得iphone12",
+  enablePullDownRefresh: false,
+  enableShareAppMessage: true
 }

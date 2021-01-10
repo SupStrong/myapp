@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import Taro from "@tarojs/taro";
 import { Provider } from 'react-redux'
 
 import configStore from './store'
 
-// import './app.css'
+import './app.scss'
 
 const store = configStore()
 

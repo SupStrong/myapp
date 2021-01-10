@@ -4,9 +4,9 @@
   "private": true,
   "description": "myapp",
   "templateInfo": {
-    "name": "taro-ui",
+    "name": "redux",
     "typescript": false,
-    "css": "less"
+    "css": "sass"
   },
   "scripts": {
     "build:weapp": "taro build --type weapp",
@@ -61,5 +61,8 @@
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react-hooks": "^1.6.1"
+  },
+  "prettier":{
+    "jsxSingleQuote":true
   }
 }
