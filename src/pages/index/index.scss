@@ -1,39 +1,169 @@
 page{
     background: #f7f8f9;
 }
+swiper{
+  height: 100vh;
+}
 .index {
     background: #f7f8f9;
 }
 .tab {
-    width: 100%;
-    background-color: #fff;
-    position: sticky;
-    left: 0;
-    z-index: 9;
-    border-bottom: 1px solid #f1f3f8;
-    .tab-item {
-      width: 25%;
-      height: 45px;
-      line-height: 45px;
-      text-align: center;
-      color: #a7adb6;
-      font-size: 16px;
-      &.active {
-        color: #0000af;
-        font-size: 20px;
-        position: relative;
-        font-weight: bold;
-        &::after {
-          content: "";
-          display: block;
-          width: 20px;
-          height: 2px;
-          background: #0000af;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  z-index: 9;
+  border-bottom: 1px solid #f1f3f8;
+  .tab-item {
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #a7adb6;
+    font-size: 16px;
+    &.active {
+      color: #0000af;
+      font-size: 20px;
+      position: relative;
+      font-weight: bold;
+      &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #0000af;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
+}
+.list-swiper{
+}
+
+// 视频
+.list-funny{
+  .video {
+    width: 100%;
+    height: 211px;
+    background: rgba(255, 255, 255, 0.4);
+    .video-paly {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-title {
+      position: absolute;
+      top: 10px;
+      padding:0 10px;
+  }
+    .play {
+        position: absolute;
+        left: -20px;
+        top: 77px;
+        margin-left: 50%;
+        z-index: 300;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .iconfont {
+            font-size: 28px;
+            color: #fff;
+        }
+    }
+  }
+  #answerVideo {
+    width: 100%;
+    height: 211px;
+  }
+}
+
+//文章
+.list-article{
+
+}
+.item-con {
+  padding: 20px 15px;
+  background-color: #fff;
+  .title {
+    width: 270px;
+    line-height: 25px;
+    height: 50px;
+    margin-right:10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .cover-place {
+    width: 65px;
+    height: 65px;
+    border-radius:2px;
+    overflow: hidden;
+    position: relative;
+    .source-cover {
+      display: block;
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.problem-share{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f3f8;
+  background-color: #fff;
+  .share-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    .iconfont{
+      font-size: 15px;
+      color: #0000af; 
+      margin-right: 5px;
+    }
+    .iconfont.active + .text{
+      color: #a7adb6;
+    }
+    .text{
+      color: #0000af ;
+      line-height: 20px;
+      font-weight: 500;
+    }
+    .active{
+      color: #a7adb6;
+    }
+  }
+  .share-btn:nth-child(1)::after,.share-btn:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 45px;
+    background: #f7f8f9;
+    right: 0;
+  }
+  .button-share{
+    position :absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+}
