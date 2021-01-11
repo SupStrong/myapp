@@ -36,7 +36,7 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentListIdx: 1,
+      currentListIdx: 0,
       isControls:false,
       isPlay: false,
       hotList:[
@@ -103,7 +103,7 @@ class Index extends Component {
           onAnimationFinish={this.canSwiperIndex.bind(this)}
           >
           <SwiperItem>
-            <View className="list-funny G-bg-white G-Mt-5 G-Plr-10 G-Ptb-10">
+            <View className="list-funny G-bg-white G-Mt-5 G-Plr-10">
               <View className="list-funny-item">
                 <View className='video'>
                   <View className='video-paly'>
@@ -135,9 +135,8 @@ class Index extends Component {
                     }
                   </View>
                 </View>
-                <View className="funny-column">123</View>
+                <ColumnNav></ColumnNav>
               </View>
-              <View className="list-funny-item">1</View>
             </View>
           </SwiperItem>
           <SwiperItem>

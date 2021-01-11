@@ -89,7 +89,7 @@ swiper{
 
 }
 .item-con {
-  padding: 20px 15px;
+  padding: 20px 15px 0px 15px;
   background-color: #fff;
   .title {
     width: 270px;
@@ -124,7 +124,7 @@ swiper{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #f1f3f8;
+  // border-top: 1px solid #f1f3f8;
   background-color: #fff;
   .share-btn{
     width: 100%;
@@ -150,14 +150,14 @@ swiper{
       color: #a7adb6;
     }
   }
-  .share-btn:nth-child(1)::after,.share-btn:nth-child(2)::after{
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 45px;
-    background: #f7f8f9;
-    right: 0;
-  }
+  // .share-btn:nth-child(1)::after,.share-btn:nth-child(2)::after{
+  //   content: '';
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 45px;
+  //   background: #f7f8f9;
+  //   right: 0;
+  // }
   .button-share{
     position :absolute;
     width: 100%;
