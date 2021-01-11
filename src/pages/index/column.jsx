@@ -65,8 +65,8 @@ class Index extends Component {
                     className='share-btn'
                     onClick={this.tabStatus.bind(this,item)}
                 >
-                    <View className={`iconfont ${item.iconPath}`}></View>
-                    <Text className='text G-Fsize-14'>{item.text}</Text>
+                    <View className={`iconfont G-color-white ${item.iconPath}`}></View>
+                    <Text className='text G-Fsize-14 G-color-white'>{item.text}</Text>
                 </View>
             )}
           </View>

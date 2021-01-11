@@ -13,8 +13,8 @@ export default {
     navigationBarTextStyle: 'black'
   },
   "tabBar": {
-    "color": "#C8CCD7",
-    "backgroundColor": "#FFFFFF",
+    "color": "white",
+    "backgroundColor": "#0F0F0F",
     "selectedColor": "#222222",
     "borderStyle": "white",
     "list": [{

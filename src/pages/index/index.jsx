@@ -103,7 +103,7 @@ class Index extends Component {
           onAnimationFinish={this.canSwiperIndex.bind(this)}
           >
           <SwiperItem>
-            <View className="list-funny G-bg-white G-Mt-5 G-Plr-10">
+            <View className="list-funny G-Mt-5">
               <View className="list-funny-item">
                 <View className='video'>
                   <View className='video-paly'>
@@ -146,7 +146,7 @@ class Index extends Component {
                   hotList.map((item,idx) =>
                     <View className='list-item G-Mt-5' key={idx} >
                       <View className='item-con fl-row-grid' onClick={this.goQuestionDes.bind(this,item.id)}>
-                        <View className='title G-Fsize-18'>你好啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈你好啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</View>
+                        <View className='title G-Fsize-18 G-color-white'>你好啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈你好啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</View>
                         <View className='cover-place'>
                             <Image className='source-cover' src={'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3806232450,3077456550&fm=26&gp=0.jpg'} />
                             <Image className='source-cover' style="left:16px" src={'https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2567670815,24101428&fm=26&gp=0.jpg'} />
