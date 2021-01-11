@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { View, Image, Text, Button } from "@tarojs/components";
 import { add, minus, asyncAdd } from '../../actions/counter'
 
-import './index.less'
+import './index.scss'
 
 
 @connect(({ counter }) => ({
@@ -21,6 +21,13 @@ import './index.less'
   }
 }))
 class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cateItemsData: [{}],
+      cateItems:['123']
+    };
+  }
   componentWillReceiveProps (nextProps) {
     console.log(this.props, nextProps)
   }
@@ -32,14 +39,29 @@ class Index extends Component {
   componentDidHide () { }
 
   render () {
+    const {cateItemsData ,cateItems } = this.state;
     return (
       <View className='index'>
-        <Button className='add_btn' onClick={this.props.add}>+</Button>
-        <Button className='dec_btn' onClick={this.props.dec}>-</Button>
-        <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
-        <View><Text>{this.props.counter.num}</Text></View>
-        <View><Text>Hello, World</Text></View>
-      </View>
+        <View className="nav_left">
+            {
+              cateItems.map((item, idx) => 
+                <View className="nav_left_items">{item}</View>
+              )
+            }
+        </View>
+        <View className="nav_right">
+          <View className="listBrand">
+            {
+            cateItemsData.map((item, idx) => 
+              <>
+                <Image className='source-cover' src={'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3806232450,3077456550&fm=26&gp=0.jpg'} />
+                <View className="brandName G-one-cloum">123</View>
+              </>
+            )
+            }
+          </View>
+        </View>
+    </View>
     )
   }
 }
