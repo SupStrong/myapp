@@ -25,7 +25,7 @@ class Index extends Component {
     super(props);
     this.state = {
       cateItemsData: [{}],
-      cateItems:['123']
+      cateItems:['123','222','111']
     };
   }
   componentWillReceiveProps (nextProps) {
@@ -53,10 +53,10 @@ class Index extends Component {
           <View className="listBrand">
             {
             cateItemsData.map((item, idx) => 
-              <>
-                <Image className='source-cover' src={'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3806232450,3077456550&fm=26&gp=0.jpg'} />
+              <View className="brand">
+                <Image className='img' src={'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3806232450,3077456550&fm=26&gp=0.jpg'} />
                 <View className="brandName G-one-cloum">123</View>
-              </>
+              </View>
             )
             }
           </View>
