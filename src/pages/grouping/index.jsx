@@ -44,6 +44,14 @@ class Index extends Component {
     const {cateItemsData ,cateItems } = this.state;
     return (
       <View className='index'>
+        <View className='search-con'>
+          <View className='search-con-input' >
+            <View className='iconfont iconsousuo'></View>
+            <Text className='search-con-text'>最新最火的装修问答平台</Text>
+          </View>
+        </View>
+        {/* 分组 */}
+        <View className="grouping-nav">
         <View className="nav_left">
           {
             cateItems.map((item, idx) => 
@@ -63,6 +71,7 @@ class Index extends Component {
             }
           </View>
         </View>
+      </View>
     </View>
     )
   }

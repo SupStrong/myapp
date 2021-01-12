@@ -21,7 +21,7 @@ let statusConfigData = [
       text: "分享",
       type: 2
     }
-  ];
+];
 function mapStateToProps(state) {
   return {
   };
