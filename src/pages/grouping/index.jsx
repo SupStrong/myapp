@@ -24,7 +24,9 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cateItemsData: [{}],
+      cateItemsData: [
+        {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
+      ],
       cateItems:['123','222','111']
     };
   }
@@ -43,11 +45,11 @@ class Index extends Component {
     return (
       <View className='index'>
         <View className="nav_left">
-            {
-              cateItems.map((item, idx) => 
-                <View className="nav_left_items">{item}</View>
-              )
-            }
+          {
+            cateItems.map((item, idx) => 
+              <View className="nav_left_items">{item}</View>
+            )
+          }
         </View>
         <View className="nav_right">
           <View className="listBrand">
