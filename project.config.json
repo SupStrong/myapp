@@ -2,7 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "myApp",
   "description": "myapp",
-  "appid": "touristappid",
+  "appid": "wx15f18d98acb429b8",
   "setting": {
     "urlCheck": true,
     "es6": false,
@@ -62,6 +62,12 @@
         {
           "name": "pages/grouping/index",
           "pathName": "pages/grouping/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "scene": null
         }
       ]

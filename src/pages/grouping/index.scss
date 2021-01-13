@@ -44,11 +44,14 @@
   /*左侧栏list的item*/  
   .nav_left .nav_left_items{  
     /*每个高30px*/  
-    height: 50px;  
+    height: 40px;  
     /*再设上下padding增加高度，总高42px*/  
     padding: 6px 0;
     /*文字14px*/  
     font-size: 14px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }  
   /*左侧栏list的item被选中时*/  
   .nav_left .nav_left_items.active{  

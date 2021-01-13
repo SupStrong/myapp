@@ -1,7 +1,7 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, Image, Text, Button } from "@tarojs/components";
+import { View, Image, Text, Input } from "@tarojs/components";
 import { add, minus, asyncAdd } from '../../actions/counter'
 
 import './index.scss'
@@ -27,7 +27,8 @@ class Index extends Component {
       cateItemsData: [
         {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
       ],
-      cateItems:['123','222','111']
+      cateItems:['123','222','111'],
+      groupNav:0
     };
   }
   componentWillReceiveProps (nextProps) {
@@ -41,13 +42,14 @@ class Index extends Component {
   componentDidHide () { }
 
   render () {
-    const {cateItemsData ,cateItems } = this.state;
+    const {cateItemsData ,cateItems,groupNav } = this.state;
     return (
       <View className='index'>
-        <View className='search-con'>
+        <View className='search-con G-bg-white'>
           <View className='search-con-input' >
             <View className='iconfont iconsousuo'></View>
-            <Text className='search-con-text'>最新最火的装修问答平台</Text>
+            <Text className='search-con-text'></Text>
+            <Input type='text'  placeholder='sssssd'/>
           </View>
         </View>
         {/* 分组 */}
@@ -55,7 +57,7 @@ class Index extends Component {
         <View className="nav_left">
           {
             cateItems.map((item, idx) => 
-              <View className="nav_left_items">{item}</View>
+              <View className={`nav_left_items ${groupNav == idx ? 'active' : ''}`} >{item}</View>
             )
           }
         </View>

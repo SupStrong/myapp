@@ -8,13 +8,13 @@ export default {
   ],
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
+    navigationBarBackgroundColor: '#1cbbb4',
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black'
   },
   "tabBar": {
     "color": "white",
-    "backgroundColor": "#0F0F0F",
+    "backgroundColor": "#1cbbb4",
     "selectedColor": "#222222",
     "borderStyle": "white",
     "list": [{
