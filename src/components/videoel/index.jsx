@@ -2,15 +2,29 @@ import React, { Component } from "react";
 import { View, Image, Video } from "@tarojs/components";
 
 import "./index.scss";
-// import { Column } from "./column";
+import { Column } from "../column";
+let innerAudioContext = null;
+let videoContext = null
 
 class VideoEl extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isControls:false,
+      isPlay: false,
+    };
+  }
+  componentDidShow () { 
+    this.getData()
+  }
+  async getData(){
+    videoContext = Taro.createVideoContext('answerVideo');
   }
 
   render() {
-    let { message, extClass='', btnMessage='' } = this.props;
+    // let { isControls, isPlay } = this.props;
+    let { isControls, isPlay } = this.state;
+
     return (
       <View className="list-funny">
         <View className="list-funny-item">

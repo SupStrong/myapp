@@ -73,7 +73,7 @@ class Index extends Component {
     });
   }
   async getData(){
-    videoContext = Taro.createVideoContext('answerVideo');
+    // videoContext = Taro.createVideoContext('answerVideo');
   }
 
   goQuestionDes(question_id) {
@@ -106,7 +106,7 @@ class Index extends Component {
             <VideoEl></VideoEl>
           </SwiperItem>
           <SwiperItem>
-            <Article></Article>
+            <Article listData={hotList}></Article>
           </SwiperItem>
           <SwiperItem>
           3

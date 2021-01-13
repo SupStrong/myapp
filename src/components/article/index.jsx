@@ -1,21 +1,29 @@
 import React, { Component } from "react";
+import Taro from "@tarojs/taro";
 import { View, Image } from "@tarojs/components";
 
 import "./index.scss";
-
+import { Column } from '../column';
 
 class Article extends Component {
   constructor(props) {
     super(props);
   }
 
+  goQuestionDes(question_id) {
+    Taro.navigateTo({
+      url: `/pages/question/details/index?id=${question_id}`,
+    });
+  }
+
   render() {
-    let { message, extClass='', btnMessage='' } = this.props;
+    let { listData } = this.props;
+    console.log(listData,"listData");
     return (
       <View className="list-article">
         <View className="list-article-item">
         {
-          hotList.map((item,idx) =>
+          listData.map((item,idx) =>
             <View className='list-item G-Mt-5' key={idx} >
               <View className='item-con fl-row-grid' onClick={this.goQuestionDes.bind(this,item.id)}>
                 <View className='title G-Fsize-18 G-color-white'>你好啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈你好啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</View>
@@ -26,6 +34,7 @@ class Article extends Component {
                     <Image className='source-cover' style="left:48px" src={'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=805208618,905828614&fm=26&gp=0.jpg'} />
                 </View>
               </View>
+              <Column message='嘻嘻和' />
             </View>
           )
         }

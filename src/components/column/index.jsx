@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image } from "@tarojs/components";
+import { View, Image, Text } from "@tarojs/components";
 
 import "./index.scss";
 let statusConfigData = [
@@ -32,7 +32,6 @@ class Column extends Component {
             {statusConfigData.map(item =>
                 <View
                     className='share-btn'
-                    onClick={this.tabStatus.bind(this,item)}
                 >
                     <View className={`iconfont G-color-white ${item.iconPath}`}></View>
                     <Text className='text G-Fsize-14 G-color-white'>{item.text}</Text>
