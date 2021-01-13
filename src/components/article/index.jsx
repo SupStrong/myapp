@@ -18,7 +18,6 @@ class Article extends Component {
 
   render() {
     let { listData } = this.props;
-    console.log(listData,"listData");
     return (
       <View className="list-article">
         <View className="list-article-item">

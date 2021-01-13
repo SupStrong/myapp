@@ -41,6 +41,14 @@ class Index extends Component {
       isPlay: false,
       hotList:[
         {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
+        {title:'嘻嘻嘻回家好好',id:1},
         {title:'嘻嘻嘻回家好好',id:1}
       ]
     };
@@ -86,7 +94,7 @@ class Index extends Component {
     const { currentListIdx, isControls, isPlay, hotList } = this.state
     return (
       <View className='index'>
-        <View className='tab fl-row-center'>
+        <View className='tab G-bg-white fl-row-center'>
           {tabList.map((item, idx) =>
             (
               <View key={idx} className={`tab-item ${currentListIdx == idx ? 'active' : ''}`} onClick={this.changeIdx.bind(this, idx)}>{item.title}</View>)
@@ -102,16 +110,16 @@ class Index extends Component {
           easingFunction='easeOutCubic'
           onAnimationFinish={this.canSwiperIndex.bind(this)}
           >
-          <SwiperItem>
+          <SwiperItem className="swiper-item">
             <VideoEl></VideoEl>
           </SwiperItem>
-          <SwiperItem>
+          <SwiperItem className="swiper-item">
             <Article listData={hotList}></Article>
           </SwiperItem>
-          <SwiperItem>
+          <SwiperItem className="swiper-item">
           3
           </SwiperItem>
-          <SwiperItem>
+          <SwiperItem className="swiper-item">
             <View className='demo-text-3'>4</View>
           </SwiperItem>
         </Swiper>
