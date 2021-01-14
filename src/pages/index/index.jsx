@@ -12,7 +12,7 @@ const tabList= [{
   title: '搞笑',
   val: 0
 }, {
-  title: '视频',
+  title: '记录片',
   val: 1
 }, {
   title: '文章',
@@ -114,13 +114,15 @@ class Index extends Component {
             <VideoEl></VideoEl>
           </SwiperItem>
           <SwiperItem className="swiper-item">
+            <VideoEl></VideoEl>
+          </SwiperItem>
+          <SwiperItem className="swiper-item">
             <Article listData={hotList}></Article>
           </SwiperItem>
           <SwiperItem className="swiper-item">
-          3
-          </SwiperItem>
-          <SwiperItem className="swiper-item">
-            <View className='demo-text-3'>4</View>
+            <View className='demo-text-3'>
+              <Article listData={hotList}></Article>
+            </View>
           </SwiperItem>
         </Swiper>
       </View>

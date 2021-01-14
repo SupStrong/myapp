@@ -58,7 +58,7 @@ class VideoEl extends Component {
             }
           </View>
         </View>
-        <Column></Column>
+        <Column type='videoEl' />
       </View>
     </View>
     );

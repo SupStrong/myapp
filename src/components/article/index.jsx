@@ -33,7 +33,7 @@ class Article extends Component {
                     <Image className='source-cover' style="left:48px" src={'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=805208618,905828614&fm=26&gp=0.jpg'} />
                 </View>
               </View>
-              <Column message='嘻嘻和' />
+              <Column type='article' />
             </View>
           )
         }
