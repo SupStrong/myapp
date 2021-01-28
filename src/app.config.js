@@ -4,7 +4,9 @@ export default {
       'pages/grouping/index',
       'pages/scan/index',
       'pages/news/index',
-      'pages/my/index'
+      'pages/my/index',
+      'pages/static/index',
+
   ],
   window: {
     backgroundTextStyle: 'light',
