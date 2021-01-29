@@ -18,19 +18,49 @@ page{
   .iconfont {
     margin: 0 6px 0 10px;
     font-size: 15px;
-    color: #a7adb6;
   }
   .search-con-text {
     font-size: 14px;
-    color: #a7adb6;
     line-height: 20px;
   }
 }
+.search-con-1 {
+  width: 100%;
+  padding: 0rpx 10px 0px;
+  height: 46px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  border-top: 1px #dcdcdc solid;
+  border-bottom: 1px #dcdcdc solid;
+}
+
+.search-con-text-1 {
+  width: 100%;
+  height: 30px;
+  background-color: #f2f5f4;
+  border-radius: 15px;
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 30px;
+}
+
+.search-con-icon-1 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 20px;
+  z-index: 10;
+}
 .tab {
   width: 100%;
-  position: fixed;
+  // position: fixed;
   left: 0;
-  top: 46px;
+  // top: 46px;
   z-index: 9;
   border-bottom: 1px solid #f1f3f8;
   .tab-item {
@@ -145,3 +175,45 @@ page{
    width: 30px;
    background-color: #F05A5A;
  }
+
+ .model-dialog{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1110;
+	opacity: 0;
+	outline: 0;
+	text-align: center;
+	-ms-transform: scale(1.185);
+	transform: scale(1.185);
+	backface-visibility: hidden;
+	perspective: 2000upx;
+	background: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s ease-in-out 0s;
+  pointer-events: none;
+  &.show{
+    opacity: 1;
+    transition-duration: 0.3s;
+    -ms-transform: scale(1);
+    transform: scale(1);
+    overflow-x: hidden;
+    overflow-y: auto;
+    pointer-events: auto;
+  }
+}
+.dialog-box{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 680rpx;
+    max-width: 100%;
+    background-color: #f8f8f8;
+    -webkit-border-radius: 10rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+    background-color: #fff;
+}

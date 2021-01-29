@@ -45,7 +45,8 @@ class Index extends Component {
           length: 0, //字体宽度
           offsetLeft: 0, //
           windowWidth: 0,
-      }
+      },
+      modelStatus:false
     };
   }
   componentDidMount () { 
@@ -126,6 +127,13 @@ class Index extends Component {
       currentListIdx: n,
     });
   }
+  
+  canModelStatus(is_bool = false){
+    this.setState({
+      modelStatus:is_bool
+    });
+  }
+
   async getData(){
   }
 
@@ -136,7 +144,7 @@ class Index extends Component {
   }
 
   render () {
-    const { currentListIdx, scrollData, isPlay, hotList } = this.state
+    const { currentListIdx, scrollData,modelStatus, isPlay, hotList } = this.state
     return (
       <View className='index'>
         {/* 
@@ -144,9 +152,13 @@ class Index extends Component {
         */}
         <View className='search-con G-bg-white'>
           <View className='search-con-input' >
-            <View className='iconfont icon-sousuo'></View>
-            <Text className='search-con-text'>搜索</Text>
+            <View className='iconfont icon-sousuo G-color-a7adb6'></View>
+            <Text className='search-con-text search-con-icon G-color-a7adb6'>搜索</Text>
           </View>
+        </View>
+        <View class="search-con-1">
+          <Text className='search-con-text-1 G-Fsize-14 G-color-a7adb6'>搜索</Text>
+          <View className='iconfont icon-sousuo G-color-a7adb6 G-Fsize-14 search-con-icon-1'></View>
         </View>
         {/* 
         // 选择
@@ -189,7 +201,7 @@ class Index extends Component {
         {/* 
         //  跑马灯
         */}
-        <View className="rollCon">
+        {/* <View className="rollCon">
           <View className='box'> 
             <View className="notice-box fl-row-center">
               <Text className="iconfont icon-gonggao G-color-white" />
@@ -198,16 +210,26 @@ class Index extends Component {
             <View className="notice-tips G-Fsize-14 G-color-white" style={`margin-left:${scrollData.offsetLeft}px`}>
             请问你是谁哈哈哈哈哈哈哈哈哈请问你是哈哈哈哈哈哈哈哈是哈哈哈哈哈哈哈哈
             </View>
-            <View className="notice-right fl-row-center">
+            <View className="notice-right fl-row-center" onClick={this.canModelStatus.bind(this,true)}>
                <Text className="iconfont icon-xiangyou G-color-white"></Text>
             </View>
           </View>
+        </View> */}
+        {/* 
+        弹出框
+        */}
+        <View className={`model-dialog fl-row-center ${modelStatus ? 'show' : ''}`} onClick={this.canModelStatus.bind(this,false)}>
+          <View className="dialog-box">12121</View>
         </View>
         {/* 
-
+          固定小icon
         */}
         <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goAskQuestion}></Image>
         <Image src={wxImg} className='wechat-btn fl-column-center' onClick={this.goAskQuestion}></Image>
+        {/* 
+          列表
+        */}
+        
       </View>
     )
   }
