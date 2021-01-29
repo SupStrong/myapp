@@ -168,7 +168,7 @@ page{
   padding-right: 30px;
  }
 
- .notice-right{
+.notice-right{
    position: absolute;
    right: 0;
    top: 0;
@@ -176,7 +176,7 @@ page{
    background-color: #F05A5A;
  }
 
- .model-dialog{
+.model-dialog{
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -204,16 +204,16 @@ page{
   }
 }
 .dialog-box{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-    width: 680rpx;
-    max-width: 100%;
-    background-color: #f8f8f8;
-    -webkit-border-radius: 10rpx;
-    border-radius: 10rpx;
-    overflow: hidden;
-    background-color: #fff;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 680rpx;
+  max-width: 100%;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 10rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background-color: #fff;
 }
