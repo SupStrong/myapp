@@ -1,0 +1,80 @@
+.tab {
+  width: 100%;
+  // position: fixed;
+  left: 0;
+  // top: 46px;
+  z-index: 9;
+  border-bottom: 1px solid #f1f3f8;
+  .tab-item {
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #a7adb6;
+    font-size: 14px;
+    &.active {
+      color: #F05A5A;
+      position: relative;
+      font-weight: bold;
+      &::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 1px;
+        background: #F05A5A;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .tab-icon{
+      display: inline;
+      position: relative;
+      .icon-shang{
+        position: absolute;
+        top: -23rpx;
+      }
+      .icon-xiala{
+        position: absolute;
+        bottom: -29rpx;
+      }
+    }
+    .iconfont{
+      font-size: 8px;
+      position: absolute;
+      left: 3px;
+      color: #E2E2E2;
+    }
+  }
+}
+// 
+.type-navbar {
+  white-space: nowrap;
+  height: 44px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.type-box {
+  width: 25%;
+  box-sizing: content-box;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+}
+
+.type-navbar-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #fff;
+}
+.type-item-on{
+  border-bottom: 2px solid #e64340;
+}
