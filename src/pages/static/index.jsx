@@ -2,7 +2,7 @@ import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { View, Image, Text, Input,Swiper, SwiperItem } from "@tarojs/components";
+import { View, Image, Text, Input,Button,Swiper, SwiperItem } from "@tarojs/components";
 import { add, minus, asyncAdd } from '../../actions/counter'
 import './index.scss'
 import mobileImg from "./mobile.png";
@@ -46,6 +46,22 @@ class Index extends Component {
           offsetLeft: 0, //
           windowWidth: 0,
       },
+      feedData: [{
+        id: 1001,
+        name: "母乳喂养",
+        checked: false
+      },
+      {
+        id: 1002,
+        name: "全奶粉",
+        checked: false
+      },
+      {
+        id: 1003,
+        name: "混合喂养",
+        checked: false
+      }
+    ],
       modelStatus:false
     };
   }
@@ -177,6 +193,18 @@ class Index extends Component {
           )
           }
         </View>
+        <View class="type-navbar">
+        {tabList.map((item, idx) =>
+            (
+              <View className="type-box fl-row-center">
+                <View className="type-navbar-item type-item-on G-Fsize-14">
+                    {item.title}
+                </View>
+            </View>
+            )  
+          )
+          }
+        </View>
         {/* 
         //  轮播
         */}
@@ -224,12 +252,36 @@ class Index extends Component {
         {/* 
           固定小icon
         */}
-        <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goAskQuestion}></Image>
-        <Image src={wxImg} className='wechat-btn fl-column-center' onClick={this.goAskQuestion}></Image>
+        {/* <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goAskQuestion}></Image>
+        <Image src={wxImg} className='wechat-btn fl-column-center' onClick={this.goAskQuestion}></Image> */}
         {/* 
           列表
         */}
-        
+        {/* <View className="cu-list">
+          <View className="cu-item">
+            <View className="content align-center">
+              <Image className="content-image" src={wxImg} />
+              <Text>销售服务</Text>
+            </View>
+          </View>
+          <View className="cu-item">
+            <View className="content align-center">
+              <Image className="content-image" src={wxImg} />
+              <Text>销售服务112</Text>
+            </View>
+          </View>
+        </View> */}
+        {/* 
+        表单
+        */}
+        <View className="connect_select_box">
+        <View className="connect_select_form select_row">
+          <Text className="connect_select_radio_title G-Fsize-14 G-color-a7adb6">喂养方式:</Text>
+          <Button className="connect_select_radio_button G-Fsize-14 G-color-a7adb6">母乳喂养</Button>
+          {/* <Button className="connect_select_radio_button active">第二个</Button> */}
+          <Button className="connect_select_radio_button active G-Fsize-14">第十三个</Button>
+        </View>
+        </View>
       </View>
     )
   }
