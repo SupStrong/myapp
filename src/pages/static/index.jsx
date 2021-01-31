@@ -14,6 +14,7 @@ import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
 import { RollCon } from "../../components/static_list/rollcon";
+import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
 
 
 
@@ -141,28 +142,11 @@ class Index extends Component {
         {/* 
         //  跑马灯
         */}
-        <RollCon></RollCon>
+        {/* <RollCon></RollCon> */}
 
-        <View className="rollCon">
-          <View className='box'> 
-            <View className="notice-box fl-row-center">
-              <Text className="iconfont icon-gonggao G-color-white" />
-              <Text className="G-color-white notice-box-text G-Fsize-12">公告</Text>
-            </View>
-            <View className="notice-tips G-Fsize-14 G-color-white" style={`margin-left:${scrollData.offsetLeft}px`}>
-            请问你是谁哈哈哈哈哈哈哈哈哈请问你是哈哈哈哈哈哈哈哈是哈哈哈哈哈哈哈哈
-            </View>
-            <View className="notice-right fl-row-center" onClick={this.canModelStatus.bind(this,true)}>
-               <Text className="iconfont icon-xiangyou G-color-white"></Text>
-            </View>
-          </View>
-        </View>
         {/* 
         弹出框
         */}
-        <View className={`model-dialog fl-row-center ${modelStatus ? 'show' : ''}`} onClick={this.canModelStatus.bind(this,false)}>
-          <View className="dialog-box">12121</View>
-        </View>
         {/* 
           固定小icon
         */}
@@ -188,14 +172,14 @@ class Index extends Component {
         {/* 
         表单
         */}
-        <View className="connect_select_box">
-        <View className="connect_select_form select_row">
-          <Text className="connect_select_radio_title G-Fsize-14 G-color-a7adb6">喂养方式:</Text>
-          <Button className="connect_select_radio_button G-Fsize-14 G-color-a7adb6">母乳喂养</Button>
-          {/* <Button className="connect_select_radio_button active">第二个</Button> */}
-          <Button className="connect_select_radio_button active G-Fsize-14">第十三个</Button>
-        </View>
-        </View>
+        {/* <View className="connect_select_box">
+          <View className="connect_select_form select_row">
+            <Text className="connect_select_radio_title G-Fsize-14 G-color-a7adb6">喂养方式:</Text>
+            <Button className="connect_select_radio_button G-Fsize-14 G-color-a7adb6">母乳喂养</Button>
+            <Button className="connect_select_radio_button active G-Fsize-14">第十三个</Button>
+          </View>
+        </View> */}
+        <FixedBtnOne></FixedBtnOne>
       </View>
     )
   }

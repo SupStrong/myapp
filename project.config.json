@@ -73,13 +73,14 @@
         },
         {
           "name": "pages/static/index",
-          "pathName": "pages/static/index",
+          "pathName": "pages/cooy/index",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/static/index",
           "pathName": "pages/static/index",
+          "query": "",
           "scene": null
         }
       ]

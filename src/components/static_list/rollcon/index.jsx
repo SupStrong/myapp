@@ -34,7 +34,7 @@ class RollCon extends Component {
   componentWillUnmount () { 
   }
   componentDidMount () {
-    // this.startMarquee();
+    this.startMarquee();
 
   }
   componentDidShow () { 
@@ -110,7 +110,7 @@ class RollCon extends Component {
           <View className='box'> 
             <View className="notice-box fl-row-center">
               <Text className="iconfont icon-gonggao G-color-white" />
-              <Text className="G-color-white notice-box-text G-Fsize-12">公告{scrollData.offsetLeft}</Text>
+              <Text className="G-color-white notice-box-text G-Fsize-12">公告</Text>
             </View>
             <View className="notice-tips G-Fsize-14 G-color-white" style={`margin-left:${scrollData.offsetLeft}px`}>
             请问你是谁哈哈哈哈哈哈哈哈哈请问你是哈哈哈哈哈哈哈哈是哈哈哈哈哈哈哈哈
@@ -120,7 +120,9 @@ class RollCon extends Component {
             </View>
           </View>
         </View>
-x
+        <View className={`model-dialog fl-row-center ${modelStatus ? 'show' : ''}`} onClick={this.canModelStatus.bind(this,false)}>
+          <View className="dialog-box">12121</View>
+        </View>
       </View>
     )
   }
