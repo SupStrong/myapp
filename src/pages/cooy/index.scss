@@ -15,7 +15,7 @@
   width: 365px;
   padding-top: 7.5px;
   padding-bottom: 7.5px;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 10px;
   color: #888888;
 }
@@ -37,11 +37,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items:center;
 }
 
 .container .main .list .item .name {
   width: 20%;
-  font-size: .8rem;
+  font-size: 14px;
 }
 
 .container .main .list .item .selectitem {
@@ -50,13 +51,17 @@
   flex-direction: row;
   justify-content: space-between;
   color: #808080;
-  font-size: .8rem;
+  font-size: 14px;
 }
 
 .container .main .list .item .selectitem>image {
   width: 30rpx;
   height: 30rpx;
   align-self: center;
+}
+
+.container .main .list .item .selectitem input {
+  font-size: 14px;
 }
 
 .container .main .checklist {
@@ -168,7 +173,7 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: .8rem;
+  font-size: 14px;
   background: #3274e5;
   color: #FFF;
   display: flex;
