@@ -4,8 +4,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { View, Image, Text, Button,Swiper, SwiperItem,Video } from "@tarojs/components";
 import { add, minus, asyncAdd } from '../../actions/counter'
-import { VideoEl } from "../../components/videoel";
-import { Article } from "../../components/article";
+// import { Article } from "../../components/article";
 import './index.scss'
 
 const tabList= [{

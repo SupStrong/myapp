@@ -6,6 +6,7 @@ export default {
       'pages/news/index',
       'pages/my/index',
       'pages/static/index',
+      'pages/cooy/index',
 
   ],
   window: {

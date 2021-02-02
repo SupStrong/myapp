@@ -1,0 +1,23 @@
+.search-con {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  background-color: #f6f6f6;
+  .search-con-input {
+    height: 32px;
+    width: 355px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+  }
+  .iconfont {
+    margin: 0 6px 0 10px;
+    font-size: 15px;
+  }
+  .search-con-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
