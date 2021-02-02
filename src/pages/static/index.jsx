@@ -10,6 +10,8 @@ import wxImg from "./wx.png";
 import noticeImg from "./notice.png";
 import { SearchOne } from "../../components/search_list/search_1";
 import { SearchTwo } from "../../components/search_list/search_2";
+import { SearchThree } from "../../components/search_list/search_3";
+
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
@@ -127,8 +129,9 @@ class Index extends Component {
         {/* 
         // 搜索框 
         */}
-        <SearchOne></SearchOne>
-        <SearchTwo></SearchTwo>
+        {/* <SearchOne></SearchOne> */}
+        {/* <SearchTwo></SearchTwo> */}
+        {/* <SearchThree></SearchThree> */}
         {/* 
         // 选择
         */}
@@ -179,7 +182,7 @@ class Index extends Component {
             <Button className="connect_select_radio_button active G-Fsize-14">第十三个</Button>
           </View>
         </View> */}
-        <FixedBtnOne></FixedBtnOne>
+        {/* <FixedBtnOne></FixedBtnOne> */}
       </View>
     )
   }
