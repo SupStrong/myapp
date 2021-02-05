@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { View,Text, Image } from "@tarojs/components";
 import './index.scss'
 import timePng from './time.png'
-let iconList = [{
+let iconList = [[{
   icon:timePng,
   title:'签到有礼'
 },{
@@ -17,7 +17,19 @@ let iconList = [{
 },{
   icon:timePng,
   title:'签到有礼'
-}]
+}],[{
+  icon:timePng,
+  title:'签到有礼'
+},{
+  icon:timePng,
+  title:'签到有礼'
+},{
+  icon:timePng,
+  title:'签到有礼'
+},{
+  icon:timePng,
+  title:'签到有礼'
+}]]
 function mapStateToProps(state) {
   return {
   };
@@ -49,30 +61,20 @@ class NavListOne extends Component {
     const { currentListIdx, isControls, isPlay, hotList } = this.state
     return (
       <View className="single-box">
-        <View className="more">
-          {iconList.map((item,index) =>
-            (
-              <View className="fl-column-center box">
-                <View className="fl-column-center box-image">
-                  <Image className="box-image-item" src={item.icon}></Image>
+        {iconList.map((item,index) => 
+          (
+            <View className="more">
+              {item.map((i_item,i_inex) => 
+              (
+                <View className="fl-column-center box">
+                  <View className="fl-column-center box-image">
+                    <Image className="box-image-item" src={i_item.icon}></Image>
+                  </View>
+                  <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-10">{i_item.title}</View>
                 </View>
-                <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-10">{item.title}</View>
-              </View>
-            )
-          )}
-        </View>
-        <View className="more">
-          {iconList.map((item,index) =>
-            (
-              <View className="fl-column-center box">
-                <View className="fl-column-center box-image">
-                  <Image className="box-image-item" src={item.icon}></Image>
-                </View>
-                <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-5">{item.title}</View>
-              </View>
-            )
-          )}
-        </View>
+              ))}
+            </View>
+          ))}
       </View>
     )
   }
