@@ -2,9 +2,22 @@ import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { View, Image, Text, Button,Swiper, SwiperItem,Video } from "@tarojs/components";
+import { View,Text, Image } from "@tarojs/components";
 import './index.scss'
-
+import timePng from './time.png'
+let iconList = [{
+  icon:timePng,
+  title:'签到有礼'
+},{
+  icon:timePng,
+  title:'签到有礼'
+},{
+  icon:timePng,
+  title:'签到有礼'
+},{
+  icon:timePng,
+  title:'签到有礼'
+}]
 function mapStateToProps(state) {
   return {
   };
@@ -14,7 +27,6 @@ function mapDispatchToProps(dispatch) {
   };
 }
 @connect(mapStateToProps, mapDispatchToProps)
-
 class NavListOne extends Component {
   constructor(props) {
     super(props);
@@ -36,10 +48,30 @@ class NavListOne extends Component {
   render () {
     const { currentListIdx, isControls, isPlay, hotList } = this.state
     return (
-      <View className='search-con G-bg-white'>
-        <View className='search-con-input' >
-          <View className='iconfont icon-sousuo G-color-a7adb6'></View>
-          <Text className='search-con-text search-con-icon G-color-a7adb6'>搜索</Text>
+      <View className="single-box">
+        <View className="more">
+          {iconList.map((item,index) =>
+            (
+              <View className="fl-column-center box">
+                <View className="fl-column-center box-image">
+                  <Image className="box-image-item" src={item.icon}></Image>
+                </View>
+                <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-10">{item.title}</View>
+              </View>
+            )
+          )}
+        </View>
+        <View className="more">
+          {iconList.map((item,index) =>
+            (
+              <View className="fl-column-center box">
+                <View className="fl-column-center box-image">
+                  <Image className="box-image-item" src={item.icon}></Image>
+                </View>
+                <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-5">{item.title}</View>
+              </View>
+            )
+          )}
         </View>
       </View>
     )
