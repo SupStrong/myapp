@@ -8,13 +8,22 @@ import './index.scss'
 import mobileImg from "./mobile.png";
 import wxImg from "./wx.png";
 import noticeImg from "./notice.png";
+
 import { SearchOne } from "../../components/search_list/search_1";
 import { SearchTwo } from "../../components/search_list/search_2";
+import { SearchThree } from "../../components/search_list/search_3";
+
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
+import { TabThree } from "../../components/tab_list/tab_3";
+
+// 导航栏
+import { NavListOne } from "../../components/nav_list/nav_1";
+
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
 import { RollCon } from "../../components/static_list/rollcon";
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
+import { PopupBoxOne } from "../../components/popup_list/popup_1";
 
 
 
@@ -127,18 +136,23 @@ class Index extends Component {
         {/* 
         // 搜索框 
         */}
-        <SearchOne></SearchOne>
+        {/* <SearchOne></SearchOne>
         <SearchTwo></SearchTwo>
+        <SearchThree></SearchThree> */}
         {/* 
-        // 选择
+        // 选择 tab
         */}
-        <TabOne></TabOne>
-        <TabTwo></TabTwo>
+        {/* <TabOne></TabOne> */}
+        {/* <TabTwo></TabTwo> */}
+        {/* <TabThree></TabThree> */}
         {/* 
-        //  轮播
+        //  轮播 
         */}
-        <SwiperOne></SwiperOne>
-
+        {/* <SwiperOne></SwiperOne> */}
+        {/* 
+           导航栏 nav
+        */}
+         <NavListOne></NavListOne>
         {/* 
         //  跑马灯
         */}
@@ -150,8 +164,14 @@ class Index extends Component {
         {/* 
           固定小icon
         */}
-        {/* <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goAskQuestion}></Image>
-        <Image src={wxImg} className='wechat-btn fl-column-center' onClick={this.goAskQuestion}></Image> */}
+        {/* <View className="mobile-btn">
+          <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goMobile}></Image>
+        </View>
+        <View className="wechat-btn">
+          <Image src={wxImg}  className='wechat-btn-img fl-column-center' onClick={this.goAskQuestion}>
+          </Image>
+          <Button className="wechat-btn-service" open-type="contact"></Button>
+        </View> */}
         {/* 
           列表
         */}
@@ -172,14 +192,11 @@ class Index extends Component {
         {/* 
         表单
         */}
-        {/* <View className="connect_select_box">
-          <View className="connect_select_form select_row">
-            <Text className="connect_select_radio_title G-Fsize-14 G-color-a7adb6">喂养方式:</Text>
-            <Button className="connect_select_radio_button G-Fsize-14 G-color-a7adb6">母乳喂养</Button>
-            <Button className="connect_select_radio_button active G-Fsize-14">第十三个</Button>
-          </View>
-        </View> */}
-        <FixedBtnOne></FixedBtnOne>
+        {/* <FixedBtnOne></FixedBtnOne> */}
+        {/* 
+        弹窗 
+        */}
+        {/* <PopupBoxOne></PopupBoxOne> */}
       </View>
     )
   }

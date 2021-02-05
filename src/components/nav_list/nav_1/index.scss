@@ -1,0 +1,27 @@
+.single-box{
+  width: 100%;
+  padding: 10px 0;
+  background: #fff;
+  .more{
+    padding-bottom: 1px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .box{
+      background: #fff;
+      .box-image{
+        margin-bottom:  1px;
+        .box-image-item{
+          width:  40px;
+          height: 40px;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+  .more:first-child{
+    margin-top: 0;
+  }
+}
