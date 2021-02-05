@@ -8,12 +8,18 @@ import './index.scss'
 import mobileImg from "./mobile.png";
 import wxImg from "./wx.png";
 import noticeImg from "./notice.png";
+
 import { SearchOne } from "../../components/search_list/search_1";
 import { SearchTwo } from "../../components/search_list/search_2";
 import { SearchThree } from "../../components/search_list/search_3";
 
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
+import { TabThree } from "../../components/tab_list/tab_3";
+
+// 导航栏
+import { NavListOne } from "../../components/nav_list/nav_1";
+
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
 import { RollCon } from "../../components/static_list/rollcon";
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
@@ -130,19 +136,23 @@ class Index extends Component {
         {/* 
         // 搜索框 
         */}
-        {/* <SearchOne></SearchOne> */}
-        {/* <SearchTwo></SearchTwo> */}
-        {/* <SearchThree></SearchThree> */}
+        {/* <SearchOne></SearchOne>
+        <SearchTwo></SearchTwo>
+        <SearchThree></SearchThree> */}
         {/* 
-        // 选择
+        // 选择 tab
         */}
         {/* <TabOne></TabOne> */}
         {/* <TabTwo></TabTwo> */}
+        {/* <TabThree></TabThree> */}
         {/* 
-        //  轮播
+        //  轮播 
         */}
         {/* <SwiperOne></SwiperOne> */}
-
+        {/* 
+           导航栏 nav
+        */}
+         <NavListOne></NavListOne>
         {/* 
         //  跑马灯
         */}

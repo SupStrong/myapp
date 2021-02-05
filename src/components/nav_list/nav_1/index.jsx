@@ -5,20 +5,6 @@ import { connect } from "react-redux";
 import { View, Image, Text, Button,Swiper, SwiperItem,Video } from "@tarojs/components";
 import './index.scss'
 
-const tabList= [{
-  title: '综合',
-  val: 0
-}, {
-  title: '最新',
-  val: 1
-}, {
-  title: '价格',
-  val: 2
-},{
-  title: '销量',
-  val: 2
-}]
-
 function mapStateToProps(state) {
   return {
   };
@@ -29,11 +15,10 @@ function mapDispatchToProps(dispatch) {
 }
 @connect(mapStateToProps, mapDispatchToProps)
 
-class TabTwo extends Component {
+class NavListOne extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentListIdx:0
     };
   }
   componentWillUnmount () { 
@@ -48,32 +33,17 @@ class TabTwo extends Component {
   componentWillReceiveProps (nextProps) {
   }
 
-  changeIdx(n) {
-    if (n == this.state.currentListIdx) {
-      return false
-    }
-    this.setState({
-      currentListIdx: n,
-    });
-  }
-  
   render () {
     const { currentListIdx, isControls, isPlay, hotList } = this.state
     return (
-      <View class="type-navbar-2">
-        {tabList.map((item, idx) =>
-          (
-            <View className="type-box fl-row-center">
-              <View className={`type-navbar-item c G-Fsize-14 ${currentListIdx == idx ? 'type-item-on' : ''}`} onClick={this.changeIdx.bind(this, idx)}>
-                  {item.title}
-              </View>
-          </View>
-          )  
-        )
-        }
+      <View className='search-con G-bg-white'>
+        <View className='search-con-input' >
+          <View className='iconfont icon-sousuo G-color-a7adb6'></View>
+          <Text className='search-con-text search-con-icon G-color-a7adb6'>搜索</Text>
+        </View>
       </View>
     )
   }
 }
 
-export { TabTwo };
+export { NavListOne };

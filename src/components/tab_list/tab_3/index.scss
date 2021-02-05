@@ -1,9 +1,10 @@
-.type-navbar-2 {
+.type-navbar-3 {
   white-space: nowrap;
   height: 44px;
   background-color: #fff;
   display: flex;
   align-items: center;
+  border: 1px #dcdcdc solid;
   .type-box {
     width: 25%;
     box-sizing: content-box;
@@ -13,6 +14,8 @@
     display: inline-block;
     overflow: hidden;
     height: 100%;
+    background-color: #fff;
+    color: #205abc;
   }
   
   .type-navbar-item {
@@ -20,9 +23,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid #fff;
   }
   .type-item-on{
-    border-bottom: 2px solid #e64340;
+    background-color: #205abc;
+    color: white;
   }
 }
