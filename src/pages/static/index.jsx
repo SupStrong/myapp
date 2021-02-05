@@ -186,7 +186,7 @@ class Index extends Component {
         {/* 
         弹窗 
         */}
-        <PopupBoxOne></PopupBoxOne>
+        {/* <PopupBoxOne></PopupBoxOne> */}
       </View>
     )
   }
