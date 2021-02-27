@@ -1,11 +1,7 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-<<<<<<< HEAD
 import { View, Image, Text, Input,Picker,RadioGroup,Radio,Label,Checkbox,CheckboxGroup } from "@tarojs/components";
-=======
-import { View, Image, Text, Input,Picker,RadioGroup,Radio,Label,CheckboxGroup,Checkbox,Textarea } from "@tarojs/components";
->>>>>>> 68a27eae66d142950f96c23f2627edcf5595bc23
 import { add, minus, asyncAdd } from '../../actions/counter'
 
 import './index.scss'

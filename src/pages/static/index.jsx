@@ -16,9 +16,13 @@ import { SearchThree } from "../../components/search_list/search_3";
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
 import { TabThree } from "../../components/tab_list/tab_3";
-
+// import { TabFour } from "../../components/tab_list/tab_3"
 // 导航栏
 import { NavListOne } from "../../components/nav_list/nav_1";
+
+// 商品列表
+import { GoodsListOne } from "../../components/good_list/good_1";
+
 
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
 import { RollCon } from "../../components/static_list/rollcon";
@@ -138,13 +142,14 @@ class Index extends Component {
         */}
         {/* <SearchOne></SearchOne>
         <SearchTwo></SearchTwo>
-        <SearchThree></SearchThree> */}
+        // <SearchThree></SearchThree> */}
         {/* 
         // 选择 tab
         */}
         {/* <TabOne></TabOne> */}
         {/* <TabTwo></TabTwo> */}
         {/* <TabThree></TabThree> */}
+        {/* <TabFour></TabFour> */}
         {/* 
         //  轮播 
         */}
@@ -152,7 +157,7 @@ class Index extends Component {
         {/* 
            导航栏 nav
         */}
-         <NavListOne></NavListOne>
+         {/* <NavListOne></NavListOne> */}
         {/* 
         //  跑马灯
         */}
@@ -189,6 +194,10 @@ class Index extends Component {
             </View>
           </View>
         </View> */}
+        {/* 
+          商品列表
+        */}
+        {/* <GoodsListOne></GoodsListOne> */}
         {/* 
         表单
         */}
