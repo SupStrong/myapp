@@ -25,6 +25,7 @@ import { GoodsListOne } from "../../components/good_list/good_1";
 
 
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
+import { SwiperTwo } from "../../components/swiper_list/swiper_2";
 import { RollCon } from "../../components/static_list/rollcon";
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
 import { PopupBoxOne } from "../../components/popup_list/popup_1";
@@ -157,6 +158,7 @@ class Index extends Component {
         //  轮播 
         */}
         {/* <SwiperOne></SwiperOne> */}
+        <SwiperTwo></SwiperTwo>
         {/* 
            导航栏 nav
         */}
@@ -168,7 +170,7 @@ class Index extends Component {
         {/* 
         下拉框
         */}
-        <DropDownOne></DropDownOne>
+        {/* <DropDownOne></DropDownOne> */}
         {/* 
         弹出框
         */}
@@ -214,7 +216,7 @@ class Index extends Component {
         {/* <PopupBoxOne></PopupBoxOne> */}
 
         {/* 收缩提示 */}
-        <ShrinkOne></ShrinkOne>
+        {/* <ShrinkOne></ShrinkOne> */}
       </View>
     )
   }
