@@ -33,6 +33,8 @@ import { PopupBoxOne } from "../../components/popup_list/popup_1";
 
 // import { Article } from "../../components/article";
 
+// 下拉 DropDownOne
+import { DropDownOne } from "../../components/dropdown_list/dropdown_1";
 
 const tabList= [{
   title: '综合',
@@ -162,7 +164,10 @@ class Index extends Component {
         //  跑马灯
         */}
         {/* <RollCon></RollCon> */}
-
+        {/* 
+        下拉框
+        */}
+        <DropDownOne></DropDownOne>
         {/* 
         弹出框
         */}
