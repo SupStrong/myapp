@@ -157,7 +157,7 @@ class Index extends Component {
         {/* 
         //  跑马灯
         */}
-        {/* <RollCon></RollCon> */}
+        <RollCon></RollCon>
 
         {/* 
         弹出框
