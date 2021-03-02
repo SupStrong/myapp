@@ -28,7 +28,8 @@ import { SwiperOne } from "../../components/swiper_list/swiper_1";
 import { RollCon } from "../../components/static_list/rollcon";
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
 import { PopupBoxOne } from "../../components/popup_list/popup_1";
-
+// 收缩提示
+import { ShrinkOne } from "../../components/shrink_list/shrink_1";
 
 
 // import { Article } from "../../components/article";
@@ -211,6 +212,9 @@ class Index extends Component {
         弹窗 
         */}
         {/* <PopupBoxOne></PopupBoxOne> */}
+
+        {/* 收缩提示 */}
+        <ShrinkOne></ShrinkOne>
       </View>
     )
   }
