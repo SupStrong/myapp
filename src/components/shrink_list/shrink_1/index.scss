@@ -1,0 +1,53 @@
+page{
+    background-color: #f2f2f2;
+}
+.classroom {
+    width: 100%;
+    background: #fff;
+    margin-top: 20rpx;
+    display: flex;
+    color: #383838;
+    position: relative;
+    align-items: center;
+}
+.classroom:first-child{
+   margin-top: 0;
+}
+.sign {
+    width: 10rpx;
+    height: 70rpx;
+    margin-left: 20rpx;
+    background: #22d9d9;
+}
+
+.class-title {
+    font-weight: 600;
+    font-size: 34rpx;
+    line-height: 100rpx;
+    margin-left: 20rpx;
+}
+
+.class-detail {
+    line-height: 30px;
+    background-color: rgba(255,255,255,1);
+    color: #9b9b9b;
+    font-size: 28rpx;
+    padding: 20rpx 20rpx 20rpx 20rpx;
+    display: none;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+}
+
+.icon-class {
+    font-size: 60rpx;
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+}
+.G_block{
+    display: block;
+}
