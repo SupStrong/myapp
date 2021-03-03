@@ -10,16 +10,28 @@ import threePng from './3.png'
 import fourPng from './4.png'
 let iconList = [[{
   icon:onePng,
-  title:'看电影'
-},{
-  icon:twoPng,
-  title:'看小说'
-},{
-  icon:threePng,
   title:'看视频'
 },{
+  icon:twoPng,
+  title:'听音乐'
+},{
+  icon:threePng,
+  title:'读小说'
+},{
   icon:fourPng,
-  title:'看风景'
+  title:'玩游戏'
+}],[{
+  icon:onePng,
+  title:'看天气'
+},{
+  icon:twoPng,
+  title:'小工具'
+},{
+  icon:threePng,
+  title:'小科普'
+},{
+  icon:fourPng,
+  title:'来投诉'
 }]]
 function mapStateToProps(state) {
   return {
