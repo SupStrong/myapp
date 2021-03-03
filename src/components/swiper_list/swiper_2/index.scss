@@ -3,6 +3,7 @@ swiper[class*="-dot"] .wx-swiper-dots {
 	align-items: center;
 	width: 100%;
 	justify-content: center;
+	margin-top: 20px;
 }
 
 swiper.round-dot .wx-swiper-dot {
@@ -32,15 +33,16 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .card-swiper {
-	height: 210px !important;
+	height: 180px !important;
 	background-color: #fff;
+	margin-top: 30px;
 }
 
 .card-swiper swiper-item {
 	width: 305px !important;
 	left: 35px;
 	box-sizing: border-box;
-	padding: 10px 0 35px;
+	padding: 10px 0 4px;
 	overflow: initial;
 }
 

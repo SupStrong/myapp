@@ -34,7 +34,7 @@ class RollCon extends Component {
   componentWillUnmount () { 
   }
   componentDidMount () {
-    this.startMarquee();
+    // this.startMarquee();
 
   }
   componentDidShow () { 
@@ -121,7 +121,13 @@ class RollCon extends Component {
           </View>
         </View>
         <View className={`model-dialog fl-row-center ${modelStatus ? 'show' : ''}`} onClick={this.canModelStatus.bind(this,false)}>
-          <View className="dialog-box">12121</View>
+          <View className="dialog-box">
+　　我欣赏我的祖国，是因为中国曾经经历了多少沧桑、经历了多少风风雨雨啊;
+我们伟大的祖国，疆域辽阔，人口众多，历史悠久，物产丰饶。在这片神奇的神州大
+地上，勇敢。智慧的中华儿女共同劳动和生活，创造了辉煌的建设业绩，谱写了一篇又一
+篇的灿烂时代篇章。在这片神奇的土地上，因为有了家，使这个世界变得温暖。因为有了爱
+，使世界变得安静，变得更加和平。因为有了朋友的帮助，使世界的孩子们感受到友谊所带来
+的快乐。在这篇土地上，我们彼此过得快乐，彼此过得幸福。</View>
         </View>
       </View>
     )

@@ -4,31 +4,22 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { View,Text, Image } from "@tarojs/components";
 import './index.scss'
-import timePng from './time.png'
+import onePng from './1.png'
+import twoPng from './2.png'
+import threePng from './3.png'
+import fourPng from './4.png'
 let iconList = [[{
-  icon:timePng,
-  title:'签到有礼'
+  icon:onePng,
+  title:'看电影'
 },{
-  icon:timePng,
-  title:'签到有礼'
+  icon:twoPng,
+  title:'看小说'
 },{
-  icon:timePng,
-  title:'签到有礼'
+  icon:threePng,
+  title:'看视频'
 },{
-  icon:timePng,
-  title:'签到有礼'
-}],[{
-  icon:timePng,
-  title:'签到有礼'
-},{
-  icon:timePng,
-  title:'签到有礼'
-},{
-  icon:timePng,
-  title:'签到有礼'
-},{
-  icon:timePng,
-  title:'签到有礼'
+  icon:fourPng,
+  title:'看风景'
 }]]
 function mapStateToProps(state) {
   return {

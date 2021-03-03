@@ -120,7 +120,7 @@ class SwiperTwo extends Component {
       {swiperList.map((item,index) =>(
         <SwiperItem class={`${cardCur==index?'cur':''}`}>
             <View class="swiper-item">
-              <Image src={item.url} style='width:100%;' mode="aspectFill"></Image>
+              <Image src={item.url} style='width:100%;height:100%' mode="aspectFill"></Image>
             </View>
         </SwiperItem>
       ))}

@@ -36,7 +36,7 @@ import { ShrinkOne } from "../../components/shrink_list/shrink_1";
 // import { Article } from "../../components/article";
 
 // 下拉 DropDownOne
-import { DropDownOne } from "../../components/dropdown_list/dropdown_1";
+// import { DropDownOne } from "../../components/dropdown_list/dropdown_1";
 
 const tabList= [{
   title: '综合',
@@ -144,9 +144,9 @@ class Index extends Component {
         {/* 
         // 搜索框 
         */}
-        {/* <SearchOne></SearchOne>
-        <SearchTwo></SearchTwo>
-        // <SearchThree></SearchThree> */}
+        {/* <SearchOne></SearchOne> */}
+        {/* <SearchTwo></SearchTwo> */}
+        {/* <SearchThree></SearchThree> */}
         {/* 
         // 选择 tab
         */}
@@ -155,18 +155,18 @@ class Index extends Component {
         {/* <TabThree></TabThree> */}
         {/* <TabFour></TabFour> */}
         {/* 
+        //  跑马灯
+        */}
+        <RollCon></RollCon>
+        {/* 
         //  轮播 
         */}
-        <SwiperOne></SwiperOne>
+        {/* <SwiperOne></SwiperOne> */}
         <SwiperTwo></SwiperTwo>
         {/* 
            导航栏 nav
         */}
-         {/* <NavListOne></NavListOne> */}
-        {/* 
-        //  跑马灯
-        */}
-        {/* <RollCon></RollCon> */}
+         <NavListOne></NavListOne>
 
         {/* <RollCon></RollCon> */}
         {/* 
