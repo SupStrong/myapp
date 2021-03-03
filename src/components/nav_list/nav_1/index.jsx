@@ -70,7 +70,7 @@ class NavListOne extends Component {
                   <View className="fl-column-center box-image">
                     <Image className="box-image-item" src={i_item.icon}></Image>
                   </View>
-                  <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-10">{i_item.title}</View>
+                  <View className="fl-row-center G-Fsize-12 G-color-333 G-Mt-5">{i_item.title}</View>
                 </View>
               ))}
             </View>

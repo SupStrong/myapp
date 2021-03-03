@@ -1,0 +1,60 @@
+swiper[class*="-dot"] .wx-swiper-dots {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
+
+swiper.round-dot .wx-swiper-dot {
+	width: 5px;
+	height: 5px;
+	position: relative;
+	margin: 2px 4px !important;
+}
+
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	top: 0rpx;
+	left: 0rpx;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
+	width: 9px;
+	height: 9px;
+}
+
+.card-swiper {
+	height: 210px !important;
+	background-color: #fff;
+}
+
+.card-swiper swiper-item {
+	width: 305px !important;
+	left: 35px;
+	box-sizing: border-box;
+	padding: 10px 0 35px;
+	overflow: initial;
+}
+
+.card-swiper swiper-item .swiper-item {
+	width: 100%;
+	display: block;
+	height: 100%;
+	border-radius: 5px;
+	transform: scale(0.9);
+	transition: all 0.2s ease-in 0s;
+	overflow: hidden;
+}
+
+.card-swiper swiper-item.cur .swiper-item {
+	transform: none;
+	transition: all 0.2s ease-in 0s;
+}

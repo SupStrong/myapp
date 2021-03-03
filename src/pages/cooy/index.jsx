@@ -1,7 +1,7 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, Image, Text, Input,Picker,RadioGroup,Radio,Label,CheckboxGroup,Checkbox,Textarea } from "@tarojs/components";
+import { View, Image, Text, Input,Picker,RadioGroup,Radio,Label,Checkbox,CheckboxGroup } from "@tarojs/components";
 import { add, minus, asyncAdd } from '../../actions/counter'
 
 import './index.scss'
@@ -99,12 +99,12 @@ class Index extends Component {
   componentDidShow () { }
 
   componentDidHide () { }
-
   checkboxChange = e => {
       console.log(e.detail.value);
+      // this.data.special = a.join(",");
   }
   radioChange = e => {
-      console.log(e.detail.value);
+    console.log(e.detail.value);
   }
   bindEducationChange = e => {
       this.setState({
@@ -116,59 +116,64 @@ class Index extends Component {
     const {jobcate,education,educationname,educationindex,speciallist } = this.state;
     return (
       <View className='container'>
-        <View className="main fl-column-center">
-          <View className="title G-Fsize-14">招聘职位编辑</View>
-          <View className="list G-bg-white fl-column-center ">
-            <View className="item G-flex-cb">
-                <View className="name G-Fsize-14">工作职位</View>
-                <View className="selectitem">
-                    <Input name="jobtitle" className="G-Fsize-14" placeholder="请输入意向职位" type="text" value=""></Input>
-                </View>
-            </View>
-            <View className="item G-flex-cb">
-                <View className="name G-Fsize-14">学历要求</View>
-                <View className="selectitem">
-                    <Picker onChange={this.bindEducationChange} range={education} rangeKey="" value={educationindex}>
-                        <View className="picker G-Fsize-14">{educationname || '请选择学历要求'}</View>
-                    </Picker>
-                </View>
-            </View>
-            <View className="item G-bg-white G-flex-cb">
-                <View className="name G-Fsize-14">性 别</View>
-                <View className="selectitem">
-                    <RadioGroup onChange={this.radioChange} className="radio-group ">
-                        <Label className="radio G-Fsize-14 G-Mr-5">
-                            <Radio checked="" value="1"></Radio>男</Label>
-                        <Label className="radio G-Fsize-14 G-Mr-5">
-                            <Radio checked="" value="2"></Radio>女</Label>
-                        <Label className="radio G-Fsize-14">
-                            <Radio checked="" value="0"></Radio>不限</Label>
-                    </RadioGroup>
-                </View>
-            </View>
+        <View className="main">
+          <View className="title">招聘职位编辑</View>
+          <View className="list">
+            <View className="item">
+              <View className="name">工作职位</View>
+                  <View className="selectitem">
+                      <Input name="jobtitle" placeholder="请输入意向职位" type="text" value="" />
+                  </View>
+              </View>
+              <View className="item">
+                  <View className="name"> 薪资待遇</View>
+                  <View className="selectitem">
+                      <Input name="money" placeholder="请输入薪资待遇" type="text" value=""></Input>
+                  </View>
+              </View>
+              <View className="item">
+                  <View className="name"> 招聘人数</View>
+                  <View className="selectitem">
+                      <Input name="num" placeholder="请输入招聘人数" type="text" />
+                  </View>
+              </View>
+              <View className="item">
+                  <View className="name">学历要求</View>
+                  <View className="selectitem">
+                      <Picker onChange={this.bindEducationChange} range={education} rangeKey="" value={educationindex}>
+                          <View className="picker G-Fsize-14">{educationname || '请选择'}</View>
+                      </Picker>
+                  </View>
+              </View>
+              <View className="item">
+                      <View className="name">性 别</View>
+                      <View className="selectitem">
+                          <RadioGroup onChange={this.radioChange} className="radio-group">
+                              <Label className="radio G-Fsize-14 G-Mr-5">
+                                  <Radio checked="" value="1"></Radio>男</Label>
+                              <Label className="radio G-Fsize-14 G-Mr-5">
+                                  <Radio checked="" value="2"></Radio>女</Label>
+                              <Label className="radio G-Fsize-14">
+                                  <Radio checked="" value="0"></Radio>不限</Label>
+                          </RadioGroup>
+                      </View>
+                  </View>
           </View>
         </View>
-        <View className="main fl-column-center">
-            <View className="title G-Fsize-14">特色服务</View>
-            <View className="checklist G-bg-white">
-                <CheckboxGroup className="multiple-select " onChange={this.checkboxChange}>
-                    {speciallist.map((item, idx) =>(
-                        <View className="checkitem G-Fsize-14 G-Mt-10">
-                            <Checkbox checked={item.checked?true:false} name="special" className="G-Fsize-14" value="{{item.name}}"></Checkbox>{item.name}
-                        </View>
-                    ))}
-                </CheckboxGroup>
-            </View>
-        </View>
-        <View className="main fl-column-center">
-            <View className="title G-Fsize-14">职位描述</View>
-            <View className="list G-bg-white fl-column-center">
-                <View className="item">
-                    <View className="selectitem" style="width:100%;">
-                        <Textarea className="textarea G-Fsize-14" name="content" placeholder="请填写自我介绍及工作经历" value='11'></Textarea>
-                    </View>
-                </View>
-            </View>
+        <View className="main">
+          <View className="title">特色服务</View>
+          <View className="checklist">
+              <CheckboxGroup onChange={this.checkboxChange}>
+              {speciallist.map((item, idx) =>
+                (
+                  
+                  <View className="checkitem">
+                    <Checkbox checked="" name="special" value={item.name} />{item.name}
+                  </View>
+                )  
+              )}
+              </CheckboxGroup>
+          </View>
         </View>
       </View>
     )

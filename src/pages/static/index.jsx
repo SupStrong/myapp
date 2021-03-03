@@ -16,11 +16,16 @@ import { SearchThree } from "../../components/search_list/search_3";
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
 import { TabThree } from "../../components/tab_list/tab_3";
-
+// import { TabFour } from "../../components/tab_list/tab_3"
 // 导航栏
 import { NavListOne } from "../../components/nav_list/nav_1";
 
+// 商品列表
+import { GoodsListOne } from "../../components/good_list/good_1";
+
+
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
+import { SwiperTwo } from "../../components/swiper_list/swiper_2";
 import { RollCon } from "../../components/static_list/rollcon";
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
 import { PopupBoxOne } from "../../components/popup_list/popup_1";
@@ -30,6 +35,8 @@ import { ShrinkOne } from "../../components/shrink_list/shrink_1";
 
 // import { Article } from "../../components/article";
 
+// 下拉 DropDownOne
+import { DropDownOne } from "../../components/dropdown_list/dropdown_1";
 
 const tabList= [{
   title: '综合',
@@ -139,17 +146,19 @@ class Index extends Component {
         */}
         {/* <SearchOne></SearchOne>
         <SearchTwo></SearchTwo>
-        <SearchThree></SearchThree> */}
+        // <SearchThree></SearchThree> */}
         {/* 
         // 选择 tab
         */}
         {/* <TabOne></TabOne> */}
         {/* <TabTwo></TabTwo> */}
         {/* <TabThree></TabThree> */}
+        {/* <TabFour></TabFour> */}
         {/* 
         //  轮播 
         */}
-        {/* <SwiperOne></SwiperOne> */}
+        <SwiperOne></SwiperOne>
+        <SwiperTwo></SwiperTwo>
         {/* 
            导航栏 nav
         */}
@@ -157,8 +166,13 @@ class Index extends Component {
         {/* 
         //  跑马灯
         */}
-        <RollCon></RollCon>
+        {/* <RollCon></RollCon> */}
 
+        {/* <RollCon></RollCon> */}
+        {/* 
+        下拉框
+        */}
+        {/* <DropDownOne></DropDownOne> */}
         {/* 
         弹出框
         */}
@@ -191,6 +205,10 @@ class Index extends Component {
           </View>
         </View> */}
         {/* 
+          商品列表
+        */}
+        {/* <GoodsListOne></GoodsListOne> */}
+        {/* 
         表单
         */}
         {/* <FixedBtnOne></FixedBtnOne> */}
@@ -200,7 +218,7 @@ class Index extends Component {
         {/* <PopupBoxOne></PopupBoxOne> */}
 
         {/* 收缩提示 */}
-        <ShrinkOne></ShrinkOne>
+        {/* <ShrinkOne></ShrinkOne> */}
       </View>
     )
   }

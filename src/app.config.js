@@ -37,13 +37,13 @@ export default {
             "pagePath": "pages/scan/index",
             "iconPath": "./assets/images/tabbar/scan.png",
             "selectedIconPath": "./assets/images/tabbar/scan01.png"
-        },
-        {
-            "text": "新闻资讯",
-            "pagePath": "pages/news/index",
-            "iconPath": "./assets/images/tabbar/news.png",
-            "selectedIconPath": "./assets/images/tabbar/news01.png"
-        },
+          },
+          {
+              "text": "新闻资讯",
+              "pagePath": "pages/news/index",
+              "iconPath": "./assets/images/tabbar/news.png",
+              "selectedIconPath": "./assets/images/tabbar/news01.png"
+          },
         {
           "text": "我的",
           "pagePath": "pages/my/index",
