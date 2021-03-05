@@ -1,0 +1,27 @@
+.myclass {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.classLeft {
+  font-size: 32rpx;
+  font-family:Noto Sans CJK;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  width: 346rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.classRight {
+  font-size: 26rpx;
+  font-family: Noto Sans CJK;
+  font-weight: 400;
+  color: rgba(150,159,179,1);
+  width: 346rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}

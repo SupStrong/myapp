@@ -1,0 +1,39 @@
+.article-4{
+  padding: 10px;
+  background-color: #fff;
+}
+.register {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register .one {
+  width: 175px;
+  height: 190rpx;
+  text-align: left;
+  background-color: #F5F6FA;
+  padding: 21rpx 24rpx;
+  box-sizing: border-box;
+}
+
+.oneImg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.oneRegister {
+  height:29rpx;
+  font-size:30rpx;
+  font-family:Noto Sans CJK;
+  font-weight:500;
+  color:rgba(38,38,38,1);
+  margin-bottom: 5px;
+}
+
+.oneTips {
+  height:25rpx;
+  font-size:24rpx;
+  font-family:Noto Sans CJK;
+  font-weight:500;
+  color:rgba(76,88,115,1);
+}

@@ -13,6 +13,10 @@ import { SearchOne } from "../../components/search_list/search_1";
 import { SearchTwo } from "../../components/search_list/search_2";
 import { SearchThree } from "../../components/search_list/search_3";
 
+
+import { ArticleThree } from "../../components/article_list/article_3";
+import { ArticleFour } from "../../components/article_list/article_4";
+// article_3
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
 import { TabThree } from "../../components/tab_list/tab_3";
@@ -168,6 +172,9 @@ class Index extends Component {
         */}
          <NavListOne></NavListOne>
 
+
+         <ArticleThree></ArticleThree>
+         <ArticleFour></ArticleFour>
         {/* <RollCon></RollCon> */}
         {/* 
         下拉框
