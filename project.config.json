@@ -82,6 +82,12 @@
           "pathName": "pages/static/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/music/index",
+          "pathName": "pages/music/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

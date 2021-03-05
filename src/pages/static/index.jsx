@@ -20,6 +20,9 @@ import { TabThree } from "../../components/tab_list/tab_3";
 // 导航栏
 import { NavListOne } from "../../components/nav_list/nav_1";
 
+// 广告
+import { AdvertOne } from "../../components/advert_list/advert_1";
+import { AdvertTwo } from "../../components/advert_list/advert_2";
 // 商品列表
 import { GoodsListOne } from "../../components/good_list/good_1";
 
@@ -160,7 +163,7 @@ class Index extends Component {
         <RollCon></RollCon>
         {/* 
         //  轮播 
-        */}
+        */} 
         {/* <SwiperOne></SwiperOne> */}
         <SwiperTwo></SwiperTwo>
         {/* 
@@ -216,7 +219,9 @@ class Index extends Component {
         弹窗 
         */}
         {/* <PopupBoxOne></PopupBoxOne> */}
-
+        {/* 广告 */}
+        <AdvertOne></AdvertOne>
+        <AdvertTwo></AdvertTwo>
         {/* 收缩提示 */}
         {/* <ShrinkOne></ShrinkOne> */}
       </View>

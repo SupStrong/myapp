@@ -7,6 +7,7 @@ export default {
       'pages/my/index',
       'pages/static/index',
       'pages/cooy/index',
+      'pages/music/index'
 
   ],
   window: {

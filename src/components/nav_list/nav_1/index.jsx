@@ -63,7 +63,7 @@ class NavListOne extends Component {
   render () {
     const { currentListIdx, isControls, isPlay, hotList } = this.state
     return (
-      <View className="single-box">
+      <View className="single-box G-Mt-5">
         {iconList.map((item,index) => 
           (
             <View className="more">
