@@ -1,0 +1,21 @@
+.article-5{
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.arrondi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrondi-left image{
+  width: 170px;
+  height: 140px;
+  border-radius: 5px;
+}
+.arrondi-right image {
+  width: 180px;
+  height: 67.5px;
+  border-radius: 5px;
+}
