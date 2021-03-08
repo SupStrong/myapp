@@ -1,0 +1,28 @@
+.single-box{
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background: #fff;
+  // margin-top: 5px;
+  .more{
+    padding-bottom: 1px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .box{
+      background: #fff;
+      .box-image{
+        margin-bottom:  1px;
+        .box-image-item{
+          width:  35px;
+          height: 35px;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+  .more:first-child{
+    margin-top: 0;
+  }
+}

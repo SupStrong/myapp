@@ -13,9 +13,16 @@ import { SearchOne } from "../../components/search_list/search_1";
 import { SearchTwo } from "../../components/search_list/search_2";
 import { SearchThree } from "../../components/search_list/search_3";
 
+
+import { ArticleThree } from "../../components/article_list/article_3";
+import { ArticleFour } from "../../components/article_list/article_4";
+import { ArticleFive } from "../../components/article_list/article_5";
+
+// article_3
 import { TabOne } from "../../components/tab_list/tab_1";
 import { TabTwo } from "../../components/tab_list/tab_2";
 import { TabThree } from "../../components/tab_list/tab_3";
+
 // import { TabFour } from "../../components/tab_list/tab_3"
 // 导航栏
 import { NavListOne } from "../../components/nav_list/nav_1";
@@ -30,6 +37,7 @@ import { GoodsListOne } from "../../components/good_list/good_1";
 import { SwiperOne } from "../../components/swiper_list/swiper_1";
 import { SwiperTwo } from "../../components/swiper_list/swiper_2";
 import { RollCon } from "../../components/static_list/rollcon";
+import { ScrollTop } from "../../components/static_list/scroll_top";
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
 import { PopupBoxOne } from "../../components/popup_list/popup_1";
 // 收缩提示
@@ -170,7 +178,12 @@ class Index extends Component {
            导航栏 nav
         */}
          <NavListOne></NavListOne>
+        {/*  */}
+         <ScrollTop></ScrollTop>
 
+         <ArticleThree></ArticleThree>
+         {/* <ArticleFour></ArticleFour> */}
+         <ArticleFive></ArticleFive>
         {/* <RollCon></RollCon> */}
         {/* 
         下拉框
