@@ -1,28 +1,37 @@
-.single-box{
+.page-section-spacing {
+  margin-top: 40rpx;
+}
+.scroll-view-h{
+  white-space: nowrap;
+  height: 150rpx;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.scroll-view-item-h{
+  display: inline-block;
   width: 100%;
-  padding: 10px 0 10px 0;
-  background: #fff;
-  // margin-top: 5px;
-  .more{
-    padding-bottom: 1px;
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    .box{
-      background: #fff;
-      .box-image{
-        margin-bottom:  1px;
-        .box-image-item{
-          width:  35px;
-          height: 35px;
-          text-align: center;
-        }
-      }
-    }
+  height: 300rpx;
+}
 
-  }
-  .more:first-child{
-    margin-top: 0;
-  }
+.warehouseImg image {
+  height: 96rpx;
+  width: 96rpx;
+}
+
+.warehouseName {
+  font-size: 24rpx;
+  color: #333333;
+}
+
+.scroll-view-item_H {
+  width: 160rpx;
+}
+.warehouseImg,.warehouseName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-view_H .scroll-view-item_H:first-child{
+  margin-left: 30rpx;
 }

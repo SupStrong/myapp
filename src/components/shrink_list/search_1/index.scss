@@ -10,39 +10,39 @@ page{
   color: #383838;
   position: relative;
   align-items: center;
+  .sign {
+    width: 10rpx;
+    height: 70rpx;
+    margin-left: 20rpx;
+    background: #22d9d9;
+  }
+  
+  .class-title {
+    font-weight: 600;
+    font-size: 34rpx;
+    line-height: 100rpx;
+    margin-left: 20rpx;
+  }
+  
+  .class-detail {
+    line-height: 30px;
+    background: white;
+    color: #9b9b9b;
+    font-size: 28rpx;
+    padding-left: 25rpx;
+    padding-top: 20rpx;
+    height: 0;
+    overflow: hidden;
+  }
+  .icon-class {
+    font-size: 60rpx;
+    position: absolute;
+    top: 0;
+    right: 20rpx;
+  }
 }
 .classroom:first-child{
   margin-top: 0;
-}
-.sign {
-  width: 10rpx;
-  height: 70rpx;
-  margin-left: 20rpx;
-  background: #22d9d9;
-}
-
-.class-title {
-  font-weight: 600;
-  font-size: 34rpx;
-  line-height: 100rpx;
-  margin-left: 20rpx;
-}
-
-.class-detail {
-  line-height: 30px;
-  background: white;
-  color: #9b9b9b;
-  font-size: 28rpx;
-  padding-left: 25rpx;
-  padding-top: 20rpx;
-  height: 0;
-  overflow: hidden;
-}
-.icon-class {
-  font-size: 60rpx;
-  position: absolute;
-  top: 0;
-  right: 20rpx;
 }
 @keyframes animations{
   0% {
