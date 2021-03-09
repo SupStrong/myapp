@@ -44,6 +44,7 @@ import { DropSide } from "../../components/static_list/drop_side";
 
 import { FixedBtnOne } from "../../components/btn_list/fixed_btn_1";
 import { PopupBoxOne } from "../../components/popup_list/popup_1";
+import { PopupBoxTwo } from "../../components/popup_list/popup_2";
 // 收缩提示
 import { ShrinkOne } from "../../components/shrink_list/shrink_1";
 
@@ -106,7 +107,8 @@ class Index extends Component {
         checked: false
       }
     ],
-      modelStatus:false
+      modelStatus:false,
+      isShow:0
     };
   }
   componentDidMount () { 
@@ -142,7 +144,12 @@ class Index extends Component {
       modelStatus:is_bool
     });
   }
-
+  goMobile(){
+    this.setState({
+      isShow:1
+    });
+    console.log(this.state.isShow);
+  }
   async getData(){
   }
 
@@ -153,7 +160,7 @@ class Index extends Component {
   }
 
   render () {
-    const { currentListIdx, scrollData,modelStatus, isPlay, hotList } = this.state
+    const { currentListIdx, scrollData,modelStatus, isPlay, hotList,isShow } = this.state
     return (
       <View className='index'>
         {/* 
@@ -182,10 +189,10 @@ class Index extends Component {
            导航栏 nav
         */}
          <NavListOne></NavListOne>
-         <NavListTwo></NavListTwo>
+         {/* <NavListTwo></NavListTwo> */}
         {/*  */}
          {/* <ScrollTop></ScrollTop> */}
-         <DropSide></DropSide>
+         {/* <DropSide></DropSide> */}
          {/* 广告 */}
          {/* <ArticleOne></ArticleOne>
          <ArticleTwo></ArticleTwo>
@@ -204,10 +211,10 @@ class Index extends Component {
         {/* 
           固定小icon
         */}
-        {/* <View className="mobile-btn">
-          <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goMobile}></Image>
+        <View className="mobile-btn">
+          <Image src={mobileImg} className='mobile-btn fl-column-center' onClick={this.goMobile.bind(this)}></Image>
         </View>
-        <View className="wechat-btn">
+        {/* <View className="wechat-btn">
           <Image src={wxImg}  className='wechat-btn-img fl-column-center' onClick={this.goAskQuestion}>
           </Image>
           <Button className="wechat-btn-service" open-type="contact"></Button>
@@ -241,6 +248,7 @@ class Index extends Component {
         弹窗 
         */}
         {/* <PopupBoxOne></PopupBoxOne> */}
+        <PopupBoxTwo shows={isShow}></PopupBoxTwo>
         {/* 收缩提示 */}
         {/* <ShrinkOne></ShrinkOne> */}
       </View>
