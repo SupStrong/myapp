@@ -1,22 +1,11 @@
 import Taro from "@tarojs/taro";
 import React, { Component } from "react";
-import { bindActionCreators } from "redux";
-import { connect } from "react-redux";
 import { View, Image, Text, Button,Swiper, Block,Video } from "@tarojs/components";
 import './index.scss'
 import jia_1 from './jia20.png'
 import jian_2 from './jian20.png'
 import tu_3 from './tu220.png'
 import x_4 from './x44.png'
-function mapStateToProps(state) {
-  return {
-  };
-}
-function mapDispatchToProps(dispatch) {
-  return {
-  };
-}
-@connect(mapStateToProps, mapDispatchToProps)
 
 class PopupBoxTwo extends Component {
   constructor(props) {
@@ -90,9 +79,7 @@ class PopupBoxTwo extends Component {
     this.getData()
    }
   close (){
-    this.setState({
-      isShow:false
-    })
+    this.props.setPopupShow(false)
   }
   spec(e){
     var that = this
@@ -138,12 +125,12 @@ class PopupBoxTwo extends Component {
   }
 
   render () {
-    const { spec,number } = this.state
-    const { shows = 0 } = this.props
-    console.log(shows);
+    let { spec,number } = this.state;
+    let { setShow } = this.props
     return (
       <>
-      {shows == 1 ? 
+      {setShow ? <View className={`mask`}></View>:null}
+      {setShow ? 
       <View className="specsPopup maskOne">
         <View className="specsPopupOne">
           <View className="specsPopupSpecs">

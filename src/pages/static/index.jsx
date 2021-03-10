@@ -146,13 +146,18 @@ class Index extends Component {
   }
   goMobile(){
     this.setState({
-      isShow:1
+      isShow:true
     });
     console.log(this.state.isShow);
   }
   async getData(){
   }
-
+  closePopup(value){
+    console.log(value);
+    this.setState({
+      isShow:value
+    });
+  }
   goQuestionDes(question_id) {
     Taro.navigateTo({
       url: `/pages/question/details/index?id=${question_id}`,
@@ -248,7 +253,7 @@ class Index extends Component {
         弹窗 
         */}
         {/* <PopupBoxOne></PopupBoxOne> */}
-        <PopupBoxTwo shows={isShow}></PopupBoxTwo>
+        {/* <PopupBoxTwo setShow={isShow} setPopupShow={this.closePopup.bind(this)}></PopupBoxTwo> */}
         {/* 收缩提示 */}
         {/* <ShrinkOne></ShrinkOne> */}
       </View>
