@@ -97,7 +97,7 @@ class NavListTwo extends Component {
   render () {
     const { dataArr } = this.state
     return (
-      <View className="page-section-spacing">
+      <View className="page-section-spacing G-Mt-5">
         <ScrollView className="scroll-view-h" scroll-x="true" style="width: 100%">
             {dataArr.map((item,index) =>(
               <Block key={index}>
